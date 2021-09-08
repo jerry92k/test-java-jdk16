@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.jigsawtest1/com.jigsawtest1.iml" filepath="$PROJECT_DIR$/com.jigsawtest1/com.jigsawtest1.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdk16test.iml" filepath="$PROJECT_DIR$/jdk16test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.jigsawtest2/org.jigsawtest2.iml" filepath="$PROJECT_DIR$/org.jigsawtest2/org.jigsawtest2.iml" />
     </modules>
   </component>
 </project>
