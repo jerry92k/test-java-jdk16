@@ -17,7 +17,11 @@ public class StreamTest {
        // streamTest.collectTest();
         //streamTest.filterTest();
 //        streamTest.mapTest();
-        streamTest.flatMapTest();
+        //streamTest.flatMapTest();
+        //streamTest.distinctTest();
+      //  streamTest.peekTest();
+//        streamTest.toArrayTest();
+        streamTest.reduceTest();
     }
 
     public void collectTest(){
@@ -98,6 +102,37 @@ public class StreamTest {
     }
 
     public void distinctTest(){
+        List<Integer> results= nums.stream()
+                .distinct()
+                .collect(Collectors.toList());
+        System.out.println(results);
+    }
 
+    public void peekTest(){
+        long count = nums.stream()
+                .peek(num-> System.out.print(num+", "))
+                .collect(Collectors.counting());
+        System.out.println();
+        System.out.println("after streem : "+count);
+    }
+
+    public void toArrayTest(){
+        int[] numsArr=nums.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
+        for(int num : numsArr){
+            System.out.println(num);
+        }
+    }
+
+    public void reduceTest(){
+        OptionalInt resultVal=nums.stream()
+                .mapToInt(Integer::intValue)
+                .reduce((result,num)->result*num+10);
+        if(resultVal.isPresent()){
+            System.out.println(resultVal.getAsInt());
+            return;
+        }
+        System.out.println("error");
     }
 }
