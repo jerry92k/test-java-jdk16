@@ -1,16 +1,8 @@
+package apitest;
+
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.Socket;
-import java.net.SocketAddress;
-import java.net.SocketOption;
-import java.nio.ByteBuffer;
-import java.nio.channels.ReadableByteChannel;
-import java.nio.channels.SocketChannel;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Locale;
 import java.util.Scanner;
-import java.util.Set;
 import java.util.regex.MatchResult;
 import java.util.stream.Stream;
 

@@ -1,9 +1,9 @@
-import java.io.OutputStreamWriter;
+package apitest;
 
 public final class RecordTest {
 
     public static void main(String[] args){
-//        BasicRecord basicRecord1 = new BasicRecord(1,"jerry",51);
+//        oldtest.BasicRecord basicRecord1 = new oldtest.BasicRecord(1,"jerry",51);
 //        System.out.println(basicRecord1);
         BasicRecord basicRecord2 = new BasicRecord(2,"kim",30);
         System.out.println(basicRecord2);

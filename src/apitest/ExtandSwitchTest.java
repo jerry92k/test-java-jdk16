@@ -1,4 +1,4 @@
-// jdk 16 기반으로 테스트
+package apitest;// jdk 16 기반으로 테스트
 
 public class ExtandSwitchTest {
 

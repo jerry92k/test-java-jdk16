@@ -1,9 +1,11 @@
+package apitest;
+
 public record BasicRecord(
     int id,
     String name,
     int age
 ){
-//    public BasicRecord(int id, String name, int age){
+//    public oldtest.BasicRecord(int id, String name, int age){
 //        if(age<10){
 //            throw new IllegalArgumentException("age는 10 이상이어야 합니다.");
 //        }
